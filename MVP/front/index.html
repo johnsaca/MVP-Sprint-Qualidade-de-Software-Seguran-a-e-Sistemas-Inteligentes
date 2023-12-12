@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>AI Diabetes System</title>
+    <link rel="icon" href="img/home_logo.jpg" type="image/png">
+</head>
+
+<body>
+     <!-- Cabeçalho de informações do sistema -->
+    <header>
+        <div class="banner">
+            <img src="img/home.png">
+        </div>
+        <div class="title">
+            <h2>Pré disposição para ataque do coração</h2>
+            <br>
+            <p>Auxilia no diagnóstico de probabilidade de um ataque do coração.</p>
+            <p>Para isso, basta preencher os campos abaixo com os dados do paciente e clicar em "Diagnosticar".</p>
+        </div>
+        
+    </header>
+
+     <!-- Opções para adicionar um novo item -->
+     
+    <section class="newItem">
+        <input type="text" id="newInput" placeholder="Nome">
+        <input type="text" id="newAge" placeholder="Idade">
+        <input type="text" id="newSex" placeholder="Sex (Mulher = 0, Homem = 1)">
+        <input type="text" id="newChol" placeholder="Colesterol">
+        <input type="text" id="newBlup" placeholder="Pressão sanquinea superior">
+        <input type="text" id="newBllow" placeholder="Pressão sanquinea inferior">
+        <input type="text" id="newRate" placeholder="Batimento cardiaco">
+        <input type="text" id="newDia" placeholder="Diabetes (Não = 0, Sim = 1)">
+        <input type="text" id="newFam" placeholder="Historico Familiar (Não = 0, Sim = 1)">
+        <input type="text" id="newSmok" placeholder="Fumante (Não = 0, Sim = 1)">
+        <input type="text" id="newObes" placeholder="Obeso(a) (Não = 0, Sim = 1)">
+        <input type="text" id="newAlco" placeholder="Consumo de alcool (Não = 0, Sim = 1)">
+        <input type="text" id="newExer" placeholder="Horas de exercício na semana">
+        <input type="text" id="newDiet" placeholder="Dieta (Não saudável = -1, Neutra = 0, Saudável = 1)">
+        <input type="text" id="newPrev" placeholder="Problema previo no coração (Não = 0, Sim = 1)">
+        <input type="text" id="newMedi" placeholder="Uso de medicamento (Não = 0, Sim = 1)">
+        <input type="text" id="newStress" placeholder="Nível de estresse (de 0 a 10)">
+        <input type="text" id="newSeden" placeholder="Horas sedentárias no dia">
+        <input type="text" id="newIncome" placeholder="Salario anual em dolar (dividir valor por 1000)">
+        <input type="text" id="newBMI" placeholder="BMI">
+        <input type="text" id="newTrigly" placeholder="Trigliceridio">
+        <input type="text" id="newActivity" placeholder="Dias de exercicio por semana">
+        <input type="text" id="newSleep" placeholder="Horas de sono">
+        <span onclick="newItem()" class="addBtn">Diagnosticar</span>
+    </section>
+
+    <!-- Tabela com items existentes -->
+    <section class="items">
+        <table id="myTable">
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Genero</th>
+                <th>Colesterol</th>
+                <th>Pressão Sanguinea Superior</th>
+                <th>Pressão Sanguinea Inferior</th>
+                <th>Batimento Cardiaco</th>
+                <th>Diabetes</th>
+                <th>Historico Familiar</th>
+                <th>Fumante</th>
+                <th>Obeso(a)</th>
+                <th>Consumo de alcool</th>
+                <th>Horas de exercicio</th>
+                <th>Dieta</th>
+                <th>Problemas previos no coração</th>
+                <th>Uso de medicamento</th>
+                <th>Nível de estresse</th>
+                <th>Horas sem exercício</th>
+                <th>Salario anual</th>
+                <th>BMI</th>
+                <th>Trigliceridio</th>
+                <th>Exercicios por semana (dias)</th>
+                <th>Horas de sono</th>
+                <th>Diagnostico</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15" height="15"></th>
+            </tr>
+        </table>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+
